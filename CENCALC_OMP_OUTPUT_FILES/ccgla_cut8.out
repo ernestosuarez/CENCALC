@@ -1,0 +1,51 @@
+ _______________________________ 
+||  _____                       |
+||  \\   ||                     |
+||   \\    PROGRAM CENCALC_OMP  |
+||   //          v0.2.2         |
+||  //___||                     |
+||______________________________|
+  
+Reading the distance matrix...
+ filename: reduced_dist_matrix.dat                                     
+Number of Colums and rows:    31
+  
+Reading the data matrix...
+ filename: MATRIX.dat                                                  
+Number of Columns:    31
+Number of Snapshots readed:    5000
+  
+-------------------------
+ CALCULATING THE ENTROPY 
+-------------------------
+  
+  
+CALC:  1
+=========================
+Estimator: Max-Likelihood
+Method:            CC-MLA
+Cut-Off:            8.000
+Num of Snapshots:    5000
+Num of columns  :      31
+           ...
+          10 %
+          20 %
+          30 %
+          40 %
+          50 %
+          60 %
+          70 %
+          80 %
+          90 %
+         100 %
+  
+ESTIMATED ENTROPY (cal/mol-Kelvin)         
+-----------------------------------        
+# NumSnap     Entropy
+     5000     30.4338
+DONE
+ Partial cpu-time for CALC  1:       4.41 seconds     0.00 hours
+Partial real-time for CALC  1:       2.25 seconds     0.00 hours
+  
+              TOTAL CPU-TIME :       4.44 seconds     0.00 hours
+              TOTAL REAL-TIME:       2.30 seconds     0.00 hours

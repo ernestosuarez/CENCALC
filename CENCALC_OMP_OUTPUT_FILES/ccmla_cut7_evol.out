@@ -1,0 +1,162 @@
+ _______________________________ 
+||  _____                       |
+||  \\   ||                     |
+||   \\    PROGRAM CENCALC_OMP  |
+||   //          v0.2.2         |
+||  //___||                     |
+||______________________________|
+  
+Reading the distance matrix...
+ filename: reduced_dist_matrix.dat                                     
+Number of Colums and rows:    31
+  
+Reading the data matrix...
+ filename: MATRIX.dat                                                  
+Number of Columns:    31
+  
+-------------------------
+ CALCULATING THE ENTROPY 
+-------------------------
+  
+  
+CALC:  1
+=========================
+Estimator: Max-Likelihood
+Method:            CC-MLA
+Cut-Off:            7.000
+Num of Snapshots:    1000
+Num of columns  :      31
+           ...
+          10 %
+          20 %
+          30 %
+          40 %
+          50 %
+          60 %
+          70 %
+          80 %
+          90 %
+         100 %
+  
+ESTIMATED ENTROPY (cal/mol-Kelvin)         
+-----------------------------------        
+# NumSnap     Entropy
+     1000     23.8052
+DONE
+ Partial cpu-time for CALC  1:       0.16 seconds     0.00 hours
+Partial real-time for CALC  1:       0.17 seconds     0.00 hours
+  
+  
+CALC:  2
+=========================
+Estimator: Max-Likelihood
+Method:            CC-MLA
+Cut-Off:            7.000
+Num of Snapshots:    2000
+Num of columns  :      31
+           ...
+          10 %
+          20 %
+          30 %
+          40 %
+          50 %
+          60 %
+          70 %
+          80 %
+          90 %
+         100 %
+  
+ESTIMATED ENTROPY (cal/mol-Kelvin)         
+-----------------------------------        
+# NumSnap     Entropy
+     2000     25.5658
+DONE
+ Partial cpu-time for CALC  2:       0.43 seconds     0.00 hours
+Partial real-time for CALC  2:       0.39 seconds     0.00 hours
+  
+  
+CALC:  3
+=========================
+Estimator: Max-Likelihood
+Method:            CC-MLA
+Cut-Off:            7.000
+Num of Snapshots:    3000
+Num of columns  :      31
+           ...
+          10 %
+          20 %
+          30 %
+          40 %
+          50 %
+          60 %
+          70 %
+          80 %
+          90 %
+         100 %
+  
+ESTIMATED ENTROPY (cal/mol-Kelvin)         
+-----------------------------------        
+# NumSnap     Entropy
+     3000     26.0759
+DONE
+ Partial cpu-time for CALC  3:       0.80 seconds     0.00 hours
+Partial real-time for CALC  3:       0.71 seconds     0.00 hours
+  
+  
+CALC:  4
+=========================
+Estimator: Max-Likelihood
+Method:            CC-MLA
+Cut-Off:            7.000
+Num of Snapshots:    4000
+Num of columns  :      31
+           ...
+          10 %
+          20 %
+          30 %
+          40 %
+          50 %
+          60 %
+          70 %
+          80 %
+          90 %
+         100 %
+  
+ESTIMATED ENTROPY (cal/mol-Kelvin)         
+-----------------------------------        
+# NumSnap     Entropy
+     4000     26.9043
+DONE
+ Partial cpu-time for CALC  4:       1.30 seconds     0.00 hours
+Partial real-time for CALC  4:       1.12 seconds     0.00 hours
+  
+  
+CALC:  5
+=========================
+Estimator: Max-Likelihood
+Method:            CC-MLA
+Cut-Off:            7.000
+Num of Snapshots:    5000
+Num of columns  :      31
+           ...
+          10 %
+          20 %
+          30 %
+          40 %
+          50 %
+          60 %
+          70 %
+          80 %
+          90 %
+         100 %
+  
+ESTIMATED ENTROPY (cal/mol-Kelvin)         
+-----------------------------------        
+# NumSnap     Entropy
+     5000     27.3973
+DONE
+ Partial cpu-time for CALC  5:       1.93 seconds     0.00 hours
+Partial real-time for CALC  5:       1.43 seconds     0.00 hours
+  
+              TOTAL CPU-TIME :       4.65 seconds     0.00 hours
+              TOTAL REAL-TIME:       3.85 seconds     0.00 hours
