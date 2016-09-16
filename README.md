@@ -70,24 +70,41 @@ cencalc_prep [OPTIONS]  file1.dat file2.dat ...
 
 **OPTIONS:** 
 
-**-u/-usecol**  _COLNUM_    Default: 2 
+**-u/-usecol**  _COLNUM_    Default: 2
+
     Column number in file1.dat, file2.dat that contains the times series of the torsion variable. 
     This value is normally 2 since first column often corresponds to the time  or the snapshot 
     number variable. 
 
--dist  _DIST_MATRIX_FILE_NAME_  Default: distance_matrix.dat 
+-dist  _DIST_MATRIX_FILE_NAME_  Default: distance_matrix.dat
+
     This variable specifies the filename of the inter-atomic mean distance matrix. 
     
--i/-info _TOR_INFO_FILE_NAME_  Default: atoms_in_tor.info 
+-i/-info _TOR_INFO_FILE_NAME_  Default: atoms_in_tor.info
+
     This file specifies the atoms involved in the torsion angles (only the two central atoms).  
     For example, if the first row in *TOR_INFO_FILE_NAME*  reads as 3 4,  then file1.dat contains 
     the time series for rotation about the 3-4 bond.
     
--nocut      Default: Use cutoff 
+-nocut      Default: Use cutoff
+
     Using this option no cutoff will be applied and the options -dist/-info  are thereby not needed.  
 
 -s/-simplify  yes/no       Default: yes 
-Remove all frozen torsions.
 
--k K_VALUE     Default: 1.0 The k_value (ˆ) sets the smoothing parameter vin the vonMises kernel density estimation as proposed in Eq.(7) in Computational Statistics & Data Analysis, 2008, 52, 34933500. By default ˆ1 as this value ensures slightly over-smoothed Probability Density Functions (PDFs) of individual torsion angles, what is convenient for searching critical points.  ag  yes/no      Default: no If yes then analytic gradients are used for locating the minima critical points of the von-Mises PDFs of individual torsion angles. The default option (no) uses instead a sufficiently accurate and fast linear interpolation scheme for PDF gradient evaluation.  step  STEP_SIZE    Default: 5 (degrees) PDF minimization step size:  xn+1=xn STEP_SIZE * GRADIENT  crit  CONVERGENCE_THRESHOLD  Default: 1.0·10 -4Gradient convergence threshold for the PDF minimizations. 
+    Remove all frozen torsions.
+
+-k K_VALUE     Default: 1.0
+
+    The k_value (k) sets the smoothing parameter vin the von-Mises kernel density estimation as 
+    proposed in Eq.(7) in Computational Statistics & Data Analysis, 2008, 52, 34933500. By 
+    default ˆ1 as this value ensures slightly over-smoothed Probability Density Functions (PDFs) 
+    of individual torsion angles, what is convenient for searching critical points.
+-ag  yes/no      Default: no
+
+    If yes then analytic gradients are used for locating the minima critical points of the von-Mises
+    PDFs of individual torsion angles. The default option (no) uses instead a sufficiently accurate 
+    and fast linear interpolation scheme for PDF gradient evaluation. 
+    
+-step  STEP_SIZE    Default: 5 (degrees) PDF minimization step size:  xn+1=xn STEP_SIZE * GRADIENT  crit  CONVERGENCE_THRESHOLD  Default: 1.0·10 -4Gradient convergence threshold for the PDF minimizations. 
 ___
